@@ -4,6 +4,9 @@ namespace STC;
 
 class CategoryComponent
 {
+
+  public function __construct() {}
+
   public function build($files)
   {
     $categories = [];
