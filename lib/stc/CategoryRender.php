@@ -8,7 +8,7 @@ class CategoryRender
 {
   const TYPE = 'post';
 
-  private $slugify;
+  protected $slugify;
 
   public function __construct()
   {
