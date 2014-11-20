@@ -1,0 +1,24 @@
+{
+  "name": "diasbruno/stc-categories",
+  "description": "stc categories plugin.",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Bruno Dias",
+      "email": "dias.h.bruno@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "STC\\": "lib/stc"
+    }
+  },
+  "require": {
+    "cocur/slugify": "~0.10"
+  },
+  "require-dev": {
+    "bafs/testify": "dev-master",
+    "diasbruno/stc": "dev-master"
+  }
+}
