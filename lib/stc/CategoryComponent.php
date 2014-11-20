@@ -1,6 +1,6 @@
 <?php
 
-use STC\Config;
+namespace STC;
 
 class CategoryComponent
 {

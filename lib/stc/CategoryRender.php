@@ -1,7 +1,7 @@
 <?php
 
-use STC\Config;
-use STC\DataWriter;
+namespace STC;
+
 use Cocur\Slugify\Slugify;
 
 class CategoryRender
