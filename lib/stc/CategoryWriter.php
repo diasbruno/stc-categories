@@ -4,7 +4,7 @@ namespace STC;
 
 use Cocur\Slugify\Slugify;
 
-class CategoryRender
+class CategoryWriter
 {
   const TYPE = 'post';
 
