@@ -2,12 +2,12 @@
 
 namespace STC;
 
-class CategoryComponent
+class CategoryDatabase
 {
 
   public function __construct() {}
 
-  public function build($files)
+  public function execute($files)
   {
     $categories = [];
     $files = $files->get_all();
