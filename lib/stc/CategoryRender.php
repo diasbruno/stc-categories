@@ -34,7 +34,7 @@ class CategoryRender
   {
     $tmpl = $posts;
 
-    $t = Config::templates()->templates_path() . '/';
+    $t = Application::templates()->templates_path() . '/';
 
     $tmpl['slug'] = $this->make_category_slug($cat);
     printLn('===> Category link: ' . $tmpl['slug']);
@@ -56,7 +56,7 @@ class CategoryRender
   private function make_categories_directory()
   {
     printLn('==> Make categories directory.');
-    @mkdir(Config::site()->public_folder() . '/category', 0755, true);
+    @mkdir(Application::site()->public_folder() . '/category', 0755, true);
   }
 
   public function render($files)
@@ -64,7 +64,7 @@ class CategoryRender
     printLn('=> CategoryRender.');
     $this->make_categories_directory();
 
-    $categories = Config::db()->retrieve('categories_list');
+    $categories = Application::db()->retrieve('categories_list');
 
     $writer = new DataWriter();
 

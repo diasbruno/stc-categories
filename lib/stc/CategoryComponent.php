@@ -31,6 +31,6 @@ class CategoryComponent
       }
     }
 
-    Config::db()->store('categories_list', $categories);
+    Application::db()->store('categories_list', $categories);
   }
 }
