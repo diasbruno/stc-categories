@@ -59,9 +59,9 @@ class CategoryWriter
     @mkdir(Application::site()->public_folder() . '/category', 0755, true);
   }
 
-  public function render($files)
+  public function execute($files)
   {
-    printLn('=> CategoryRender.');
+    printLn('=> CategoryWriter.');
     $this->make_categories_directory();
 
     $categories = Application::db()->retrieve('categories_list');
